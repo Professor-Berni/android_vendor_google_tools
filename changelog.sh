@@ -32,9 +32,5 @@ cp $Changelog $OUT/system/etc/
 cp $Changelog $OUT/
 rm $Changelog
 
-# Update the BUILD_ID based on the actual BUILD_ID.
-# This line can be removed once the BUILD_ID can be retrieved from the environment variables.
-export BUILD_ID=SQ3A.220705.004
-
-mv $OUT/Changelog.txt $OUT/$BUILD_ID-`date +%Y%m%d`-Changelog.txt
+mv $OUT/Changelog.txt $OUT/`date +%Y%m%d`-Changelog.txt
 
