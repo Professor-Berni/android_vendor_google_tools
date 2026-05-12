@@ -16,4 +16,6 @@ This script generates a changelog by listing all commits between two specified d
 ```      
 * This script cannot be run on its own; it must always be called at the end of a build process, for example:
 
-  source build/envsetup.sh && lunch lineage_suzuran-userdebug && ./vendor/google/tools/changelog.sh
+```
+source build/envsetup.sh && lunch lineage_suzuran-userdebug && ./vendor/google/tools/changelog.sh
+```
